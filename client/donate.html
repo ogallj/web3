@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Orphanage Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Support Our Orphanage</h1>
+        <p>Your generous donations help provide a safe and nurturing environment for children in need.</p>
+    </header>
+
+    <main class="donation-page">
+        <section class="donation-options">
+            <h2>Choose Your Donation Amount</h2>
+            <form id="donationForm">
+                <label for="donationAmount">Amount:</label>
+                <select id="donationAmount" name="donationAmount" required>
+                    <option value="">Select an amount</option>
+                    <option value="10">10 USD</option>
+                    <option value="25">25 USD</option>
+                    <option value="50">50 USD</option>
+                    <option value="100">100 USD</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" id="customAmount" name="customAmount" placeholder="Enter custom amount" style="display: none;">
+                <label for="donorName">Your Name:</label>
+                <input type="text" id="donorName" name="donorName" required>
+
+                <label for="donorEmail">Your Email:</label>
+                <input type="email" id="donorEmail" name="donorEmail" required>
+
+                <button type="submit">Donate Now</button>
+            </form>
+        </section>
+
+        <section class="thank-you-message" id="thankYouMessage" style="display: none;">
+            <h2>Thank You!</h2>
+            <p>Your donation helps us provide a better future for the children.</p>
+        </section>
+    </main>
+
+    <script src="donation.js"></script>
+</body>
+</html>
